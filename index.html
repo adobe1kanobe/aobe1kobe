@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <title>adobe1kanobe | Web Development & Graphic Design</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo1.png"> 
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/one.style.css">
+
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="assets/css/footers/footer-v7.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/pace/pace-flash.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
+    <link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/one.dark.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">	
+<style>	
+	/* Style the Image Used to Trigger the Modal */
+		#myImg {
+			border-radius: 0px;
+			cursor: pointer;
+			transition: 0.3s;
+			}
+
+		#myImg:hover {opacity: 0.7;}
+	/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 10; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+	/* Modal Content (Image) */
+		.modal-content {
+			margin: -40px 0px 0px 150px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			max-width: 1000px;
+			}
+	/* Caption of Modal Image (Image Text) - Same Width as the Image */
+		#caption {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			color: #ccc;
+			padding: 10px 0;
+			height: 150px;
+			}
+	/* Add Animation - Zoom in the Modal */
+		.modal-content, #caption {
+			-webkit-animation-name: zoom;
+			-webkit-animation-duration: 0.6s;
+			animation-name: zoom;
+			animation-duration: 0.6s;
+			}
+			@-webkit-keyframes zoom {
+			from {-webkit-transform:scale(0)}
+			to {-webkit-transform:scale(1)}
+			}
+			@keyframes zoom {
+			from {transform:scale(0)}
+			to {transform:scale(1)}
+			}
+	/* The Close Button */
+			.close {
+			position: absolute;
+			top: 53px;
+			right: 125px;
+			color: #ffffff;
+			font-size: 30px;			
+			transition: 0.3s;
+			}
+			.close:hover,
+			.close:focus {
+			color: #ffffff;
+			text-decoration: none;
+			cursor: pointer;
+			}
+	/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+			.modal-content {
+			width: 100%;
+			}
+		}
+</style>
+</head>
+<!--
+The #page-top ID is part of the scrolling feature.
+The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
+-->
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery dark">
+<!--=== HEADER ===-->
+    <nav class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="menu-container page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#intro">
+                    <img src="assets/img/A1K logo 10c.png" style="margin-top: -20px;" height="65" width="65" alt="Logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav">
+                        <li class="page-scroll home">
+                            <a href="#body">Home</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">About Us</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="#mission">Mission</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#services">Services</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="#tests">Site Tests</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<!--=== END HEADER ===-->
+<!-- INTRO SECTION -->
+    <section id="intro" class="intro-section">
+        <div class="fullscreenbanner-container">
+            <div class="fullscreenbanner">
+                <ul>
+                    <!-- SLIDE 1 -->
+                    <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/sliders/revolution/bg1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption rs-caption-1 sft start"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="100"
+                            data-speed="800"
+                            data-start="2000"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            Web Development & Grapic Design
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-2 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="200"
+                            data-speed="1000"
+                            data-start="3000"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            Professional, Responsive, UX Optimzed.<br>
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="360"
+                            data-speed="800"
+                            data-start="3500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a></span>
+                            <span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a></span>
+                        </div>
+                    </li>
+                    <!-- SLIDE 2 -->
+                    <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/sliders/revolution/bg2.jpg" alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+						<!-- LAYERS -->
+                        <div class="tp-caption rs-caption-1 sft start"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="100"
+                            data-speed="800"
+                            data-start="1500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            Dedicated, Reliable, Effective
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-2 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="200"
+                            data-speed="1000"
+                            data-start="2500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            An inovative design & development company.
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sft"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="360"
+                            data-speed="800"
+                            data-start="3500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a></span>
+                            <span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a></span>
+                        </div>
+                    </li>
+                    <!-- SLIDE 3 -->
+                    <li data-transition="slideup" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/sliders/revolution/bg3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <div class="tp-caption rs-caption-1 sft start"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="110"
+                            data-speed="800"
+                            data-start="1500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            Bringing Visions To The World
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-2 sfb"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="210"
+                            data-speed="800"
+                            data-start="2500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            Putting you closer to your audience.<br>
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption rs-caption-3 sfb"
+                            data-x="center"
+                            data-hoffset="0"
+                            data-y="370"
+                            data-speed="800"
+                            data-start="3500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off"
+                            style="z-index: 6">
+                            <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a></span>
+                            <span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div>
+                <div class="tp-dottedoverlay twoxtwo"></div>
+            </div>
+        </div>
+    </section>
+<!-- END INTRO SECTION -->
+<!-- ABOUT SECTION -->
+    <section id="about" class="about-section section-first">
+        <div class="block-v1">
+            <div class="container">
+                <div class="row content-boxes-v3">
+                    <div class="col-md-4 md-margin-bottom-30">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">Creative Desgin</h2>
+                            <p>Tailor made solutions for your business, charity, social club, private blog or personal site.  Whatever the need, we've got a solution.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 md-margin-bottom-30">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-desktop"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">Web Development</h2>
+                            <p>Fully responsive designs that ensure your on-line presence is available to your audience wherever your audience may be.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-line-chart"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">SEO & Analytics</h2>
+                            <p>Get the highest ranking on search engines to ensure your site is a success, and analyze your traffic for optimum campaigning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-image bg-grey">
+            <div class="container">
+                <div class="title-v1">
+                    <h1>We are Adobe1Kanobe</h1>
+                    <p><strong>Creative</strong> web development & design solutions to suite all needs. <br>
+                    Dedicated to helping our clients develop a <strong>successful</strong> on-line presence.</p>
+                </div>
+                <div class="img-center">
+                    <img class="img-responsive" src="assets/img/mockup/mockup.png" alt="">
+                </div>
+            </div>
+        </div>
+	</section>
+<!--  END ABOUT SECTION -->
+<!-- MISSION SECTION -->
+        <section id="mission" class="about-section section-first">
+		<div class="container content-lg">
+            <div class="title-v1">
+                <h2>Our Mission</h2>
+                <p>We not only <strong>create</strong> great designs. We <strong>build</strong> partnerships. <br>
+                Working on your vision, we <strong>meet</strong> and <strong>exceed</strong> your expectations.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 content-boxes-v3 margin-bottom-40">
+                    <div class="clearfix margin-bottom-30">
+                        <i class="icon-custom icon-md rounded-x icon-bg-u fa fa-shield"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">Verifiable Experience</h2>
+                            <p>Our client's testimonials say it all</p>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-bottom-30">
+                        <i class="icon-custom icon-md rounded-x icon-bg-u fa fa-cloud"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">Up to Date Technology</h2>
+                            <p>We use the latest & greatest web technologies and continuously research popular trends</p>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-bottom-30">
+                        <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-diamond"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">Quality Service &amp; Support</h2>
+                            <p>Always there when you need us.  We keep you informed & up to date about improvements that can be made to your site even after it is up & running</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/mockup/High-Performance2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="parallax-quote parallaxBg">
+            <div class="container">
+                <div class="parallax-quote-in">
+                    <p><span class="color-green">Perfection </span></strong>is not attainable, but if we chase perfection, we can catch<span class="color-green"> excellence.</p>
+                    <small>— Vince Lombardi —</small>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- END MISSION Section -->
+<!-- SERVICE SECTION -->
+    <section id="services">
+        <div class="container content-lg_2">
+            <div class="title-v1">
+                <h2>Our Services</h2>
+                <p>We are <strong>dedicated</strong> to helping our clients grow a successful business on-line. <br>
+                Always <strong>professional.</strong> Always <strong> timely.</strong></p>
+            </div>					 
+            <div class="row service-box-v1">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-sitemap"></i>
+                        <h2 class="heading-md">Web Design &amp; Development</h2>
+                        <p>Static or Dynamic, One-Page Prallaxis or Multi-Page, We use the most up to date technologies</p>
+                        <ul class="list-unstyled">
+                            <li>Logo, Identity & Branding</li>
+                            <li>Responsive, Mobile-First Desgin</li>
+                            <li>Fast, Fully Optimized</li>
+                            <li>SEO Best Practices</li>
+                            <li>E-commerce Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line fa fa-check-square"></i>
+                        <h2 class="heading-sm">Testing & Optimization</h2>
+                        <p>Using the most populer metix testing tools and optimization techniques, we ensure every site meets the highest standards.</p>
+                        <ul class="list-unstyled">
+                            <li>PS Insights, GTmetrics, Pingdom</li>
+                            <li>Code Minification, Concatenation</li>
+                            <li>No Render Blocking Code</li>
+                            <li>Browser Casche Leveraging</li>
+                            <li>CDN Incorporation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-yoast"></i>
+                        <h2 class="heading-sm">SEO & Analytics</h2>
+                        <p>Employing the latest tools and techniques to ensure your site is seen and highly ranked by the most popular search engines.</p>
+                        <ul class="list-unstyled">
+                            <li>Mobile Optimization</li>
+                            <li>Local SEO, Content Aggregation</li>
+                            <li>Social Media Content</li>
+                            <li>Google Analytics Ready</li>
+                            <li>Timely Analysis &amp; Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-unstyled row portfolio-box-v1">
+            <li class="col-sm-4">
+                <img class="img-responsive" src="assets/img/webdevelopment.jpg" alt="">
+                <div class="portfolio-box-v1-in">
+                    <h3>Mobile-Friendly</h3>
+                    <p>Fully Responsive on All Devices<br>
+					Smart Development & Design</p>                    
+                </div>
+            </li>
+            <li class="col-sm-4">
+                <img class="img-responsive" src="assets/img/fast-loading-websites.jpg" alt="">
+                <div class="portfolio-box-v1-in">
+                    <h3>High Performance</h3>
+                    <p>Geared for Performance<br>
+					Optimized for Excellence</p>                    
+                </div>
+            </li>
+            <li class="col-sm-4">
+                <img class="img-responsive" src="assets/img/high-seo-performance.jpg" alt="">
+                <div class="portfolio-box-v1-in">
+                    <h3>Get Ranked</h3>
+                    <p>Make Your Presence Known<br>
+					Analyse Your Traffic</p>
+                </div>
+            </li>
+        </ul>
+	</section>
+<!-- END SERVICE SECTION -->
+<!-- CLIENTS SECTION -->
+	    <div class="clients-section parallaxBg" style="padding-top: 100px;">
+            <div class="container">
+                <div class="title-v1">
+				    <h2>Our Clients</h2>
+                </div>
+                <ul class="owl-clients-v2">
+                    <li class="item"><a href="http://www.azsllc.com"><img src="assets/img/clients/azsllc.png" alt=""></a></li>
+                    <li class="item"><a href="http://www.communitytriangle.com"><img src="assets/img/clients/community triangle.png" alt=""></a></li>
+                    <li class="item"><a href="http://www.cerulaxis.com"><img src="assets/img/clients/cerulaxis.png" alt=""></a></li>
+                    <li class="item"><a href="http://www.interpreting1.com"><img src="assets/img/clients/interpreting 1.png" alt=""></a></li>
+                    <li class="item"><a href="http://www.touchandlearn.com"><img src="assets/img/clients/touch n learn.png" alt=""></a></li>
+                    <li class="item"><a href="http://www.cncmachinescontrol.com"><img src="assets/img/clients/CNC.png" alt=""></a></li>
+					<li class="item"><a href="http://www.arch.co.th"><img src="assets/img/clients/arch machatronic.png" alt=""></a></li>
+					<li class="item"><a href="http://www.musicianvideomaker.com"><img src="assets/img/clients/MusicVideoMaker.png" alt=""></a></li>
+				</ul>
+            </div>
+        </div>
+        <div class="testimonials-v3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <ul class="list-unstyled owl-ts-v1">
+                            <li class="item">
+                                <img class="rounded-x img-bordered" src="assets/img/clients/MusicVideoMaker.png" alt="">
+                                <div class="testimonials-v3-title">
+                                    <p>Jon</p>
+                                    <span>Proprietor, WWDS, LLC</span>
+                                </div>
+                                <p>Tony is one of the most curious, ambitious, and self driven individuals that we’ve ever had the pleasure to work with on this platform. His dedication to getting the task done RIGHT and not half-heartedly makes him a rare gem of talent. 
+ Thank you for your determination in figuring out our coding issue, as well as going above and beyond expectations. 1000% recommended to anyone in need of a Wordpress developer with a great personality.</p>
+                            </li>
+                            <li class="item">
+                                <img class="rounded-x img-bordered" src="assets/img/clients/azsllc.png" alt="">
+                                <div class="testimonials-v3-title">
+                                    <p>Omar Abdelrehim</p>
+                                    <span>President/CEO, A-Z Services</span>
+                                </div>
+                                <p>Very detail oriented, listens well to understand what you need and above all makes sure you are satisfied with the final product.
+ 
+ Works with pride, likes his work to be high qaulity.</p>
+                            </li>
+							<li class="item">
+                                <img class="rounded-x img-bordered" src="assets/img/clients/touch n learn.png" alt="">
+                                <div class="testimonials-v3-title">
+                                    <p>AbuHamzah Hijjee</p>
+                                    <span>President/CEO, Touch and Learn</span>
+                                </div>
+                                <p>Tony is awesome. he uses his creativity and shares with you his idea before he implements anything. He is very accomodating and makes sure you get what you want.
+ 
+ Highly recommend him.</p>
+                            </li>
+							<li class="item">
+                                <img class="rounded-x img-bordered" src="assets/img/clients/cerulaxis.png" alt="">
+                                <div class="testimonials-v3-title">
+                                    <p>Omar Abdelrehim</p>
+                                    <span>President/CEO, Cerulaxis</span>
+                                </div>
+                                <p>Work still in progress.<p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+<!-- END CLIENTS SECTION --> 
+<!-- TEST RESULTS SECTIOON -->	
+	<section id="tests" class="results-bg" style="padding-bottom: 60px;">    
+        <div class="container content-lg_2">
+            <div class="title-v1">
+                <h2>How This Site Performs</h2>
+                <p>This site was tested with six of the most popular browser testing tools to date.  Here are the results.<br>  To visit these sites and view all test results for this site, click on the green highlighted links.  At some of <br>these links you may have to type this site's URL <span class="color-green">http://adbe1kabe.tk</span> in and re-perform the test.</p>
+			</div>					 
+            <div class="row service-box-v1">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">						
+						<h2 class="heading-md">Google Performance Test</h2>
+                        <p>Google has a few different test sites.  These results were obtained using:<br><span class="color-green"><a href="https://testmysite.thinkwithgoogle.com/">Google TestMySite</a></span></p>
+                        <h5 style="margin-top: -25px;">U.S.-based server</h5>
+							<!-- Trigger the Modal -->
+							<img id="myImg" src="assets/img/testresults/Google Score.jpg" alt="Google Performance Test" width="300" height="200">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">x</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+							</div>
+                    </div>
+                </div>				
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">						
+						<h2 class="heading-md">Google PageSpeed Insights Test</h2>
+                        <p>If a site does not score well here, it will not get ranked.  These results were obtained using:<br><span class="color-green"><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fadbe1kabe.tk%2F">Google PageSpeed Insights</a></span></p>
+                        <h5 style="margin-top: -25px;">U.S.-based server</h5>
+							<!-- Trigger the Modal -->
+							<img id="myImg2" src="assets/img/testresults/PageSpeed Insights.jpg" alt="Google PageSpeed Insights Test" width="300" height="200">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">x</span>
+								<img class="modal-content" id="img02">
+								<div id="caption"></div>
+							</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">						
+						<h2 class="heading-md">GTmetrix Test</h2>
+                        <p>A very popular, thurough and informative test site.  These results were obtained using:<br><span class="color-green"><a href="https://gtmetrix.com/reports/adbe1kabe.tk/rctXExi6">GTmetrix</a></span></p>
+                        <h5 style="margin-top: -25px;">Canada-based server</h5>
+							<!-- Trigger the Modal -->
+							<img id="myImg3" src="assets/img/testresults/GTmetrix.jpg" alt="GTmetrix Test" width="300" height="200">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">x</span>
+								<img class="modal-content" id="img03">
+								<div id="caption"></div>
+							</div>						
+                    </div>
+                </div>
+				<div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">						
+						<h2 class="heading-md">Pingdom Test</h2>
+                        <p>Another very popular test site.  These results were obtained using:<br><span class="color-green"><a href="https://tools.pingdom.com/#!/bl00ly/http://adbe1kabe.tk/">Pingdom</a></span></p>
+                        <h5 style="margin-top: -25px;">U.S.-based server</h5>
+							<!-- Trigger the Modal -->
+							<img id="myImg4" src="assets/img/testresults/Pingdom.jpg" alt="Pingdom Test" width="300" height="200">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">x</span>
+								<img class="modal-content" id="img04">
+								<div id="caption"></div>
+							</div>						
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">						
+						<h2 class="heading-md">PageSpeedGrader Test</h2>
+                        <p>Another test site I recently started using.  These results were obtained using:<br><span class="color-green"><a href="http://www.pagespeedgrader.com/report.html?report_id=295889&domain=http://adbe1kabe.tk">PageSpeedGrader</a></span></p>
+                        <h5 style="margin-top: -25px;">U.S.-based server</h5>
+							<!-- Trigger the Modal -->
+							<img id="myImg5" src="assets/img/testresults/PageSpeedGrader.jpg" alt="PageSpeedGrader Test" width="300" height="200">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">x</span>
+								<img class="modal-content" id="img05">
+								<div id="caption"></div>
+							</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">						
+						<h2 class="heading-md">Website Grader Test</h2>
+                        <p>This test site is more thurough than others.  These results were obtained using:<br><span class="color-green"><a href="https://website.grader.com/results/www.adbe1kabe.tk"> Website Grader</a></span></p>
+						<h5 style="margin-top: -25px;">U.S.-based server</h5>
+							<!-- Trigger the Modal -->
+							<img id="myImg6" src="assets/img/testresults/Website Grader.jpg" alt="Website Grader Test" width="300" height="200">
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+								<span class="close">x</span>
+								<img class="modal-content" id="img06">
+								<div id="caption"></div>
+							</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+	</section>
+<!-- END TEST RESULTS -->
+<!-- CONTACT SECTION -->
+    <section id="contact" class="contacts-section">
+        <div class="container content-lg">
+            <div class="title-v1">
+                <h2>Contact Us</h2>
+                <p>Let us help you with your website and graphic design needs. <br>
+                Contact us today.  We'll be happy to hear from you.</p>
+            </div>
+
+            <div class="row contacts-in">
+                <div class="col-md-6 md-margin-bottom-40">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-home"></i> 137 S. Main St., Broadway, N.C.</li>
+                        <li><i class="fa fa-phone"></i> Please contact through e-mail</li>
+                        <li><i class="fa fa-envelope"></i> <a href="info%40example.html">tonyscottbrown@yahoo.com</a></li>
+                        <li><i class="fa fa-globe"></i> <a href="http://htmlstream.com/">www.adbe1kabe.tk</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="http://htmlstream.com/preview/unify-v1.9/One-Page/assets/php/sky-forms-pro/demo-contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style">
+                        <fieldset>
+                            <label>Name</label>
+                            <div class="row">
+                                <div class="col-md-7 margin-bottom-20 col-md-offset-0">
+                                    <div>
+                                        <input type="text" name="name" id="name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label>Email <span class="color-red">*</span></label>
+                            <div class="row">
+                                <div class="col-md-7 margin-bottom-20 col-md-offset-0">
+                                    <div>
+                                        <input type="text" name="email" id="email" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label>Message</label>
+                            <div class="row">
+                                <div class="col-md-11 margin-bottom-20 col-md-offset-0">
+                                    <div>
+                                        <textarea rows="8" name="message" id="message" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p><button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark">Send Message</button></p>
+                        </fieldset>
+
+                        <div class="message">
+                            <i class="rounded-x fa fa-check"></i>
+                            <p>Your message was successfully sent!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <p>2016 &copy; All Rights Reserved. <a target="_blank" href="http://www.upwork.com/o/profiles/users/_~01f669c755f3aaac33/.">adobe1kanobe</a></p>
+            <ul class="social-icons">
+                <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+                <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+                <li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+                <li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+                <li><a href="#" data-original-title="Linkedin" class="social_linkedin rounded-x"></a></li>
+            </ul>
+            <span class="page-scroll"><a href="#intro"><i class="fa fa-angle-double-up back-to-top"></i></a></span>
+        </div>
+    </section>
+<!-- END CONTACT SECTION -->
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/pace/pace.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+    <script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <!-- JS Page Level-->
+    <script type="text/javascript" src="assets/js/one.app.js"></script>
+    <script type="text/javascript" src="assets/js/forms/login.js"></script>
+    <script type="text/javascript" src="assets/js/forms/contact.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pace-loader.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/revolution-slider.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            App.init();
+            App.initCounter();
+            App.initParallaxBg();
+            LoginForm.initLoginForm();
+            ContactForm.initContactForm();
+            OwlCarousel.initOwlCarousel();
+            StyleSwitcher.initStyleSwitcher();
+            RevolutionSlider.initRSfullScreen();
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <script src="assets/plugins/respond.js"></script>
+        <script src="assets/plugins/html5shiv.js"></script>
+        <script src="assets/js/plugins/placeholder-IE-fixes.js"></script>
+        <script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+        <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+<!-- MODAL SCRIPT -->	
+	<script>
+		// Get the modal
+			var modal = document.getElementById('myModal');
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+			}
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg2');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+			}
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg3');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+			}
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg4');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+			}
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg5');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+			}
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg6');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+			}
+		// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+		// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			modal.style.display = "none";
+			}
+	</script>
+<!-- END MODAL SCRIPT -->	
+</body>
+
+<!-- Cloned by RabinsXP.com-->
+</html>
